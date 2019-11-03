@@ -1,4 +1,4 @@
-# Kubernetes Cluster Setup
+# Digital Ocean Kubernetes Bootstrap
 
 This repository contains the Kubernetes boilerplate code that I use to host my own applications such as https://mccallister.dev, https://mccallister.io and some other personal applications.
 
