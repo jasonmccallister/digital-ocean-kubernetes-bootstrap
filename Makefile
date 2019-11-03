@@ -30,9 +30,6 @@ create-metrics:
 	kubectl create -f kube-state-metrics/examples/standard/
 	rm -rf kube-state-metrics
 
-get-database:
-	doctl database list --format ID,Name
-
 remove:
 	doctl kubernetes cluster delete $(CLUSTER_NAME)
 
