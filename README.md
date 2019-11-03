@@ -22,7 +22,7 @@ This will allow you to host multiple applications in a single Kubernetes cluster
 
 In an effort to save time, this project aims to be as hands off as possible. In fact, once you have cloned the repository and changed the defaults in the Makefile, all you have to run is `make setup` and let the tool do the rest for you!
 
-# Roadmap
+## Roadmap
 
 - [x] Creating a Managed DO Kubernetes Cluster
 - [x] Creating a Managed DO Database
