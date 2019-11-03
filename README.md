@@ -24,11 +24,24 @@ In an effort to save time, this project aims to be as hands off as possible. In 
 
 # Roadmap
 
-- [x] Creating a Cluster
-- [x] Creating a Datase
-- [x] Installing Advanced Metrics on the Cluster
-- [ ] Provide example for Craft
-- [ ] Provide example for Laravel
-- [ ] Provide example for Yii
-- [ ] Provide example for Go
-- [ ] Provide example for Hasura GraphQL
+- [x] Creating a Managed DO Kubernetes Cluster
+- [x] Creating a Managed DO Database
+- [x] Installing Advanced Metrics on the Kuberenetes Cluster
+- [ ] Provide example project for Craft
+- [ ] Provide example project for Laravel
+- [ ] Provide example project for Yii
+- [ ] Provide example project for Go
+- [ ] Provide example project for Hasura GraphQL
+
+## Security
+
+If you discover any security related issues, please email themccallister@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [Jason McCallister](https://github.com/jasonmccallister)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
