@@ -27,4 +27,8 @@ In an effort to save time, this project aims to be as hands off as possible. In 
 - [x] Creating a Cluster
 - [x] Creating a Datase
 - [x] Installing Advanced Metrics on the Cluster
-- [ ] Provide examples for Craft, Laravel, Yii, and Go projects
+- [ ] Provide example for Craft
+- [ ] Provide example for Laravel
+- [ ] Provide example for Yii
+- [ ] Provide example for Go
+- [ ] Provide example for Hasura GraphQL
