@@ -13,20 +13,27 @@ echo:
 	@echo "DATABASE_NODES: $(DATABASE_NODES)"
 	@echo "DEFAULT_REGION: $(DEFAULT_REGION)"
 	@echo "\n"
-cluster:
+
+create-cluster:
 	doctl kubernetes cluster create $(CLUSTER_NAME)
-config:
+
+kubectl-config:
 	doctl kubernetes cluster kubeconfig save $(CLUSTER_NAME)
-database:
+
+create-database:
 	doctl database create $(CLUSTER_NAME) \
 	--engine $(DATABASE_ENGINE) --region $(DEFAULT_REGION) \
-	--size $(DATABASE_SIZE) --nodes $(DATABASE_NODES)
-metrics:
+	--size $(DATABASE_SIZE) --num-nodes $(DATABASE_NODES)
+
+create-metrics:
 	git clone git@github.com:kubernetes/kube-state-metrics.git
 	kubectl create -f kube-state-metrics/examples/standard/
 	rm -rf kube-state-metrics
+
 remove:
 	doctl kubernetes cluster delete $(CLUSTER_NAME)
-setup: cluster config metrics
+	doctl database delete $(CLUSTER_NAME)
+
+setup: create-database create-cluster kubectl-config create-metrics
 	kubectl apply -f cluster/roles.yaml
 	kubectl apply -f cluster/traefik.yaml
