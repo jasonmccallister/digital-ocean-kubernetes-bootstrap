@@ -21,3 +21,10 @@ This will allow you to host multiple applications in a single Kubernetes cluster
 ## Getting Started
 
 In an effort to save time, this project aims to be as hands off as possible. In fact, once you have cloned the repository and changed the defaults in the Makefile, all you have to run is `make setup` and let the tool do the rest for you!
+
+# Roadmap
+
+- [x] Creating a Cluster
+- [x] Creating a Datase
+- [x] Installing Advanced Metrics on the Cluster
+- [ ] Provide examples for Craft, Laravel, Yii, and Go projects
