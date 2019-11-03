@@ -32,8 +32,7 @@ create-metrics:
 
 remove:
 	doctl kubernetes cluster delete $(CLUSTER_NAME)
-	doctl database delete $(CLUSTER_NAME)
 
 setup: create-database create-cluster kubectl-config create-metrics
-	kubectl apply -f cluster/roles.yaml
-	kubectl apply -f cluster/traefik.yaml
+	# kubectl apply -f cluster/roles.yaml
+	# kubectl apply -f cluster/traefik.yaml
